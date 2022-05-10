@@ -58,7 +58,7 @@ if($result = mysqli_query($con, $query)) {
   <div class="conatiner">
     <div class="main">
       <div class="topbar">
-        <a href="logout.php"></a>
+        <a href="logout.php">Logout</a>
       </div>
       
     </div>
@@ -185,18 +185,25 @@ if(isset($_SESSION['username']))
 if(isset($_SESSION['prn'])) 
 
 
+// echo $result['srno']." ".$result['username']." ".$result['phone']." ".$result['password']." ".$result['create_datetime'];
+
+
 $query = "SELECT * FROM sports WHERE prn = '".$_SESSION['prn']."'";
 
 ;
+$result = mysqli_query($con, $query);
 
-if($result = mysqli_query($con, $query)) {
-
-  $row = mysqli_fetch_assoc($result);
-
-  $prn = $row['prn'];
   
-
-  echo "<div class='info'> <span>".$row['sport']."</span></div>";
+  
+  $total = mysqli_num_rows($result);
+  
+  $prn = $row['prn'];
+  if($result){
+    
+  while($total!=0)
+  {$row = mysqli_fetch_assoc($result);
+    echo "<div class='info'> <span>".$row['sport']."</span></div>";}
+  
 
   
 } else {

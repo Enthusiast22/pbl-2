@@ -45,14 +45,7 @@ a {
   background-image: url("./login_img.jpeg"); 
   height: 400px;
   width: 250px;
-  /* background-image: linear-gradient(rgba(0,0,0,var(--bg-filter-opacity)),rgba(0,0,0,var(--bg-filter-opacity))), var(--bg-img);
-  height: 20em;
-  width: 15em;
-  font-size: 1.5em;
-  color: white;
-  border-radius: 1em;
-  padding: 1em;
-  /*margin: 2em;*/
+  
   display: flex;
   align-items: flex-end;
   background-size: cover;
@@ -168,7 +161,6 @@ a {
   font-weight: normal;
 }
 
-/* MEDIA QUERIES */
 @media screen and (max-width: 1285px) {
   .cards-wrapper {
     grid-template-columns: 1fr 1fr;
