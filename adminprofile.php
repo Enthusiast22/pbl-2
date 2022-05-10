@@ -47,7 +47,7 @@ if($result = mysqli_query($con, $query)) {
   <div class="conatiner">
     <div class="main">
       <div class="topbar">
-        <a href="logout.php">  </a>
+        <a href="logout.php">Logout</a>
       </div>
       
     </div>
@@ -125,8 +125,16 @@ if($result = mysqli_query($con, $query)) {
         <div class="card shadow-sm">
           <div class="card-header bg-transparent border-0">
             <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Student Record</h3>
-            
-            <button class="btn"><a  href="display.php"><h2 class="index-text">DISPLAY</h2></a></button>
+            <p class="mb-0"><i class="far fa-clone pr-1"></i>ALL</p>
+            <button class="btn"><a  href="./display/display.php"><h2 class="index-text">DISPLAY</h2></a></button>
+
+            <p class="mb-0"><i class="far fa-clone pr-1"></i>SELECT</p>
+            <button class="btn"><a  href="./display/compA.php"><h2 class="index-text">Comp-A</h2></a></button>
+            <button class="btn"><a  href="./display/compB.php"><h2 class="index-text">Comp-B</h2></a></button>
+            <button class="btn"><a  href="./display/itA.php"><h2 class="index-text">IT-A</h2></a></button>
+            <button class="btn"><a  href="./display/itB.php"><h2 class="index-text">IT-B</h2></a></button>
+            <button class="btn"><a  href="./display/entcA.php"><h2 class="index-text">ENTC-A</h2></a></button>
+            <button class="btn"><a  href="./display/entcB.php"><h2 class="index-text">ENTC-B</h2></a></button>
           </div>
           <div class="card-body pt-0">
 
