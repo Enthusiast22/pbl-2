@@ -24,7 +24,7 @@
         <!-- <th>Password</th> -->
     </tr>
 <?php 
-include("db.php");
+include("../db.php");
 $query= "select * from sports ";
 $data = mysqli_query($con,$query);
 $total = mysqli_num_rows($data);
@@ -39,7 +39,7 @@ $row = mysqli_fetch_assoc($data);
 
 <?php
 // error_reporting(0);
-include("db.php");
+include("../db.php");
 $query= "select * from users ";
 $data = mysqli_query($con,$query);
 $total = mysqli_num_rows($data);
@@ -53,10 +53,12 @@ $prn=$result['prn'];
 
 if($total!=0)
 {
+   
     // $result = mysqli_fetch_assoc($data);
     while(($result=mysqli_fetch_assoc($data)))
     {
-        echo "
+    if($result['branch']=='entc' && $result['division']=='B' )
+    {echo "
         <tr>
         <td>".$result['id']."</td>
         <td>".$result['username']."</td>
@@ -92,6 +94,7 @@ if($total!=0)
 
         echo "<td>".$row['sport']."</td>";
 
+        }
         
         } 
     }
