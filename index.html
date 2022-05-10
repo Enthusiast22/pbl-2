@@ -1,16 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-<div class="container">
-  <h1 class="heading">SPORTS WEBSITE</h1>
-  <button class="btn btn1"><a  href="adminlog.php"><h1 class="index-text">Admin Login</h1></a></button>
-  <button class="btn btn2"><a  href="login.php"><h1 class="index-text">Student Login/SignUp</h1></a></button>
-  
-</div>
-  </body>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <section>
+        <div class="world">
+            
+        </div>
+    </section>
+
+            <div class="title">
+              Sports Website
+            </div>
+
+            <div class="container">
+            
+              <div class="card">
+                <div class="box">
+                  <div class="content">
+                    <h2></h2>
+                    <h3>Admin Section</h3>
+                    <p>Login</p>
+                    <a href="adminlog.php">Login</a>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="card">
+                <div class="box">
+                  <div class="content">
+                    <h2></h2>
+                    <h3>Student Section</h3>
+                    <p>Login / Register </p>
+                    <a href="login.php">Login</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <script>
+            setInterval(time, 1000);
+        function time(){
+            document.getElementById('time').innerHTML = new Date().toLocaleTimeString()
+        }
+        </script>
+
+</body>
+
 </html>
