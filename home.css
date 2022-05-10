@@ -23,6 +23,7 @@
     /* background: -webkit-linear-gradient(rgb(97, 26, 163), rgb(217, 238, 240)); */
     background-clip: text;
     color: white;
+    text-decoration: none;
   }
   
   .nav-li {
@@ -84,12 +85,13 @@
   
   .menu .nav-ul .nav-li .nav-a {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: none;
+    text-decoration: ;
     /* background: rgb(235, 238, 238); */
     background-clip: text;
     color: transparent;
     transition: 0.5s;
-    padding-right: 20px;
+    padding-right: 22px;
     color: white;
   }
   .menu .nav-ul .nav-li:hover > .nav-a {
@@ -252,7 +254,7 @@
   .info1,.info2,.info3{
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 600;
     width: 33%;
     height: 250px;
@@ -262,7 +264,6 @@
    margin-left: 2%;
    margin-right: 3%;
   }
-  
   
   .info2,.info3{
    line-height: 26px;
