@@ -72,22 +72,39 @@ a {
   transform: rotate(0);
 }
 
+.schedule_text ,h1, p{
+  color:rgb(125, 103, 235);
+}
 .card h1 {
-  margin: 0;
-  font-size: 1.5em;
-  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+  line-height: 1em;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.card p {
-  font-size: 0.75em;
+/* .card p {
+  font-size: 1em;
+  text-align: center;
   font-family: 'Open Sans';
   margin-top: 0.5em;
-  line-height: 2em;
-}
+  line-height: 1em;
+} */
 
 .card .tags {
   display: flex;
   justify-content: center;
+  /* color:white; */
+}
+.tags a{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color:#3c3163;
+  background-color: rgb(165, 210, 171);
+  border-radius: 6px;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
 }
 
 .card .tags .tag {
